@@ -3,3 +3,4 @@
 require_relative '../config/environment'
 puts "Welcome to Tic-tac-toe!!!"
 sleep(1)
+Play.new.start
