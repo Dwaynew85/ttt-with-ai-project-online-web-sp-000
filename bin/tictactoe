@@ -3,6 +3,7 @@
 require_relative '../config/environment'
 puts "Welcome to Tic-tac-toe!!!"
 sleep(1)
+
 def start
   puts "What kind of game do you want to play? 1, 2, or 0?"
   kind = gets.chomp
@@ -23,7 +24,6 @@ def start
       puts "That entry is invalid. Please select 1, 2, or 0 players."
       start
     end
-  end
 
   def loop
     puts " Please enter Y or N"
