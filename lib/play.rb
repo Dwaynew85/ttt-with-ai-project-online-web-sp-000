@@ -39,4 +39,3 @@ class Play
       end
     end
   end
-end
