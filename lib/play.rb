@@ -36,7 +36,7 @@ class Play
         exit
       else
         loop
-      end
-    end
-
-  end
+      end 
+    end 
+  end 
+end
