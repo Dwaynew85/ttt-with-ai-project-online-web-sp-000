@@ -25,4 +25,18 @@ class Play
       end
     end
 
+    def loop 
+      puts " Please enter Y or N"
+      input = gets.strip
+      case input 
+      when "y"
+        start 
+      when "n"
+        puts "Goodbye!"
+        exit 
+      else 
+        loop 
+      end 
+    end
+
   end
