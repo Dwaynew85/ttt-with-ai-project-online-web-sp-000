@@ -1,7 +1,7 @@
 class Play
 
-  def initialize 
-  end 
+  def initialize
+  end
 
   def start
     puts "What kind of game do you want to play? 1, 2, or 0?"
@@ -19,7 +19,7 @@ class Play
         Game.new(Players::Human.new("X"), Players::Human.new("O")).play
         puts "Would you like to play again?"
         loop
-      else 
+      else
         puts "That entry is invalid. Please select 1, 2, or 0 players."
         start
       end
