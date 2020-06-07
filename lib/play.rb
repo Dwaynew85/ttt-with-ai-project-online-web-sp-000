@@ -27,10 +27,9 @@ class Play
   def loop
     puts "Please enter y or n"
     answer = gets.strip
-    case answer
-    when "y"
+    if answer == "y"
       start
-    when "n"
+    elsif == "n"
       puts "Goodbye!"
       exit
     else
