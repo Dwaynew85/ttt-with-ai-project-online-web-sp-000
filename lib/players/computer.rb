@@ -16,16 +16,15 @@ module Players
   def move(board, timer = 0)
     @board = board
     timer <= 0 ? @timer = 0.01 : @timer = timer
-    case
-      when winning_move != nil
+      if winning_move != nil
         input = winning_move + 1
-      when blocking_move != nil
+      elsif blocking_move != nil
         input = blocking_move + 1
-      when center?
+      elsif center?
         input = 5
-      when opposite_corner != nil && board.taken?(opposite_corner) == false
+      elsif opposite_corner != nil && board.taken?(opposite_corner) == false
         input = opposite_corner
-      when corner
+      elsif corner
         input = corner + 1
       else
         until !board.taken?(input)
