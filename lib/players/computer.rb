@@ -75,4 +75,3 @@ module Players
         nil
     end
   end
-end
