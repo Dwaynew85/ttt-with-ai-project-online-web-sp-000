@@ -5,16 +5,15 @@ class Play
 
   def start
     kind = gets.chomp
-    case kind
-    when kind "0"
+    if kind == "0"
       Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
       puts "Would you like to play again?"
       loop
-    when kind "1"
+    elsif kind == "1"
       Game.new(Players::Human.new("X"), Players::Computer.new("O")).play
       puts "Would you like to play again?"
       loop
-    when kind "2"
+    elsif kind == "2"
       Game.new(Players::Human.new("X"), Players::Human.new("O")).play
       puts "Would you like to play again?"
       loop
