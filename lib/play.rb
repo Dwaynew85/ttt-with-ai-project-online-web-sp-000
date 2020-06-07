@@ -3,38 +3,38 @@ class Play
   def initialize
   end
 
-  def start 
-    kind = gets.chomp 
-    case kind 
+  def start
+    kind = gets.chomp
+    case kind
     when kind "0"
-      Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play 
+      Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
       puts "Would you like to play again?"
-      loop 
+      loop
     when kind "1"
-      Game.new(Players::Human.new("X"), Players::Computer.new("O")).play 
+      Game.new(Players::Human.new("X"), Players::Computer.new("O")).play
       puts "Would you like to play again?"
-      loop 
+      loop
     when kind "2"
-      Game.new(Players::Human.new("X"), Players::Human.new("O")).play 
+      Game.new(Players::Human.new("X"), Players::Human.new("O")).play
       puts "Would you like to play again?"
-      loop 
-    else 
+      loop
+    else
       puts "That entry is invalid. Plese select 1, 2, or 0 players."
-      start 
-    end 
-  end 
+      start
+    end
+  end
 
-  def loop 
+  def loop
     puts "Please enter y or n"
     answer = gets.strip
-    case answer 
+    case answer
     when "y"
       start
     when "n"
       puts "Goodbye!"
-      exit 
-    else 
-      loop 
-    end 
-  end 
+      exit
+    else
+      loop
+    end
+  end
 end 
