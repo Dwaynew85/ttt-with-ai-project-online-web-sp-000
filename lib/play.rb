@@ -4,6 +4,7 @@ class Play
   end
 
   def start
+    puts "What kind of game do you want to play? 1, 2, or 0?"
     kind = gets.chomp
     if kind == "0"
       Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
