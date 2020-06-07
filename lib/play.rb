@@ -29,7 +29,7 @@ class Play
     answer = gets.strip
     if answer == "y"
       start
-    elsif == "n"
+    elsif answer == "n"
       puts "Goodbye!"
       exit
     else
